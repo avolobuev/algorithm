@@ -5,18 +5,18 @@ import java.util.Stack;
 public class Algorithm
 {
 	/*
-	 * Префиксы:
-	 * _a - алгоритм или арифметика
-	 * _g - геометрия
-	 * _s - статистика
-	 * _m - массивы и матрицы
+	 * Prefix:
+	 * _a - algorithm
+	 * _g - geometry
+	 * _s - statistic
+	 * _m - matrix and arrays
 	 */
 		
 //--------------------------------------------------------------------------------------//	
-	/*Блок алгоритмов и арифметики*/
+	/*Algorithms block*/
 	
 	/*
-	 * алгоритм Евклида нахождения наибольшего общего делителя 2 неотрицательных целых чисел
+	 * Evklid algorithm
 	 */
 	
 	public static int _aEvklid(int a, int b)
@@ -28,7 +28,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Проверка, простое ли число
+	 * Check: Is number is a prime?
 	 */
 	
 	public static boolean _aIsPrime(int n)
@@ -41,7 +41,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Гармоническое число
+	 * Harmonic number
 	 */
 	
 	public static double _aHarmonic(int n)
@@ -53,7 +53,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Случайное целое число из диапозона [0, n)
+	 * Random int [0, n)
 	 */
 	
 	public static int _aRandomInt(int n)
@@ -62,7 +62,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Случайное целое число из диапозона [a, b)
+	 * Random int [a, b)
 	 */
 	
 	public static int _aRandomInt(int a, int b)
@@ -71,7 +71,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Случайное число из диапозона [a, b)
+	 * Random double [a, b)
 	 */
 	
 	public static double _aRandomDouble(int a, int b)
@@ -80,7 +80,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Случайное число i из дискретного распределения с вероятностью in[i]
+	 * Random i from discrete with possibility
 	 */
 	
 	public static int _aRandomIntFromDiscrete(double[] in)
@@ -96,9 +96,9 @@ public class Algorithm
 	}
 	
 	/*
-	 * Бинарный поиск - поиск значение в массиве
-	 * -1 значит значение не присутствует в списке, иначе вернет индекс где находится элемент
-	 * ! in должен быть отсортирован по возрастанию
+	 * Binary search
+	 * -1 not in list, or return index
+	 * ! in - ascending order
 	 */
 	
 	public static int _aBinarySearch(int nKey, int[] in)
@@ -119,7 +119,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Перевод числа из 10 в двоичную систему
+	 * To binary system
 	 * == Integer.toBinaryString(N)
 	 */
 	
@@ -135,7 +135,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Последовательность Фибоначи
+	 * Fibonachi sequence
 	 */
 	
 	public static long _aFibonachi(int n)
@@ -146,7 +146,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Факториал
+	 * Factorial
 	 */
 	
 	public static long _aFaktorial(int n)
@@ -167,7 +167,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Двухстековый алгоритм Дейкстры вычисления арифметических выражений
+	 * Double stack algorithm(Deixtra)
 	 * (1 + ((2+2)*(4-1))......
 	 */
 	public static double _aDeixtraStackOperation(String sIn)
@@ -224,9 +224,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Задача Иосифа: N человек хотят выбрать одного,
-	 * для этого они становятся в круг и считая удаляют каждого M-го.
-	 * Нужно для заданого M и N показать последовательность исключения, чтобы правильно выбрать где стоять 
+	 * Josephus's task
 	 */
 	
 	public static int[] _aJosephus(int N, int M)
@@ -268,10 +266,10 @@ public class Algorithm
 	
 	
 //--------------------------------------------------------------------------------------//	
-	/*Блок геометриии*/
+	/*Geometry block*/
 	
 	/*
-	 * Вычисление гипотенузы прямоугольного треугольника
+	 * Hypotenuse
 	 */
 	
 	public static double _gHipotenuse(double a, double b)
@@ -280,7 +278,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Длина окружности
+	 * Circle length
 	 */
 	
 	public static double _gCircleLength(double r)
@@ -289,10 +287,10 @@ public class Algorithm
 	}
 	
 	/*
-	 * Количество диагоналей у n-угольника
+	 * Count of diagonals in n-gon
 	 */
 	
-	public static int _gCountDioganal(int n) throws Exception
+	public static int _gCountDiagonal(int n) throws Exception
 	{
 		if(n < 4)
 		{
@@ -305,7 +303,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Площади фигур
+	 * S
 	 */
 	
 	public static double _gSquareS(int a)
@@ -331,10 +329,10 @@ public class Algorithm
 	
 	
 //--------------------------------------------------------------------------------------//	
-	/*Блок статистики*/
+	/*Statistics*/
 	
 	/*
-	 * Сумма значений массива
+	 * Sum
 	 */
 	
 	public static double _sSum(double[] in)
@@ -346,7 +344,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Среднее значение из массива
+	 * Mean
 	 */
 	
 	public static double _sAverage(double[] in) throws Exception
@@ -363,7 +361,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Максимальный элемент
+	 * Max
 	 */
 	
 	public static double _sMax(double[] in) throws Exception
@@ -385,7 +383,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Минимальный элемент
+	 * Min
 	 */
 	
 	public static double _sMin(double[] in) throws Exception
@@ -407,7 +405,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Дисперсия
+	 * Variance
 	 */
 	
 	public static double _sDispersia(double[] in) throws Exception
@@ -431,7 +429,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Среднее квадратичное отклонение
+	 * Standard deviation
 	 */
 	
 	public static double _sStdev(double[] in) throws Exception
@@ -448,10 +446,10 @@ public class Algorithm
 	}
 	
 //--------------------------------------------------------------------------------------//
-	/*Блок работы с массивами и матрицами*/
+	/*Matrix and arrays*/
 	
 	/*
-	 * Перемешать случайным образом элементы массива
+	 * Shuffle
 	 */
 	
 	public static void _mShuffle(double[] in)
@@ -488,7 +486,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Заполнить элементами массив
+	 * Filling with  test data
 	 */
 	
 	public static void _mFillArrayWithRandomDouble(double[] in)
@@ -516,7 +514,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Вывести массив на экран
+	 * Printing arrays
 	 */
 	
 	public static void _mPrintArray(double[] in)
@@ -538,7 +536,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Поменять порядок элементов на обратный
+	 * Reverse array
 	 */
 	
 	public static void _mReverse(double[] in)
@@ -575,10 +573,10 @@ public class Algorithm
 	}
 	
 	/*
-	 * Является ли строка палиндромом, т.е. символы с начала = символам в конце
+	 * Is string a palindrome
 	 */
 	
-	public static boolean _mIsPalindrom(String sIn)
+	public static boolean _mIsPalindrome(String sIn)
 	{
 		int n = sIn.length();
 		for(int i = 0; i < n/2; i++)
@@ -590,7 +588,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Упорядочен ли массив строк по алфавиту
+	 * Check order
 	 */
 	
 	public static boolean _mIsInAlphabetOrder(String[] sIn)
@@ -605,7 +603,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Заполнить матрицу случайными числами
+	 * Fill matrix with test data
 	 */
 	
 	public static void _mFillMatrixWithRandom(double in[][])
@@ -642,7 +640,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Вывести матрицу на экран
+	 * Print matrix
 	 */
 	
 	public static void _mPrintMatrix(double in[][])
@@ -693,7 +691,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Перемножить матрицы
+	 * Multiply matrixes
 	 */
 	
 	public static int[][] _mMultiply(int A[][], int B[][]) throws Exception
@@ -757,7 +755,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Транспонирование матрицы
+	 * Transpose
 	 */
 	
 	public static int[][] _mT(int A[][])
@@ -819,7 +817,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Инициализация единичной матрицы
+	 * Init E-matrix
 	 */
 	
 	public static void _mE(double A[][])
@@ -857,7 +855,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Матрица умноженная на число
+	 * Matrix*CONST
 	 */
 	
 	public static void _mMultiplyMatrixOnConstant(double in[][], int nConst)
@@ -894,7 +892,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Перемножение векторов
+	 * Vector*Vector
 	 */
 	
 	public static double[] _mMyltiplyArrays(double[] a, double[] b) throws Exception
@@ -932,7 +930,7 @@ public class Algorithm
 	}
 	
 	/*
-	 * Перемножение матриц и векторов
+	 * Matrix*Vector
 	 */
 	
 	public static int[][] _mArrayToMatrix(int[] v, boolean bRowOrCol)
@@ -992,7 +990,7 @@ public class Algorithm
 //--------------------------------------------------------------------------------------//	
 
 	/*
-	 * Сортировки
+	 * Sorts
 	 */
 	
 	private static boolean _gt(Comparable a, Comparable b)
@@ -1165,7 +1163,7 @@ public class Algorithm
 //--------------------------------------------------------------------------------------//	
 	
 	/*
-	 * Классы и структуры
+	 * Classes
 	 */
 	
 	public static class MyStack<T> implements Iterable<T>
@@ -1468,10 +1466,4 @@ public class Algorithm
 			this.dEndTime = 0;
 		}
 	}
-
-
-
-
-
-
 }
