@@ -449,7 +449,7 @@ namespace MongoDB
                 string sDbName = "mydb";
                 MongoClient client = new MongoClient(sConn);
                 MongoServer server = client.GetServer();
-                MongoCredentials cred = new MongoCredentials("avolobuev","28061991");
+                MongoCredentials cred = new MongoCredentials("abc","1234");
                 MongoDatabase db = server.GetDatabase(sDbName, cred);
                 MongoCollection<BsonDocument> values = db.GetCollection("customer");
                 foreach (var item in values.FindAll())
